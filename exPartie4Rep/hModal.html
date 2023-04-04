@@ -1,0 +1,80 @@
+<!-- Bootstrap modal est une fonctionnalité de la bibliothèque Bootstrap, qui permet de créer des fenêtres modales (ou "pop-up") pour afficher du contenu supplémentaire ou des informations importantes à l'utilisateur. -->
+<!-- https://getbootstrap.com/docs/5.0/components/modal/ -->
+<!-- 
+    creez une page vide avec css et js de bootstrap
+    ajoutez un bootstrap button qui servira a lancer le modal
+
+    creez une div avec un id de votre choix et une class="modal" qui contient div class="modal-dialog" qui contient une div class="modal-content" qui contient  div class="modal-body" avec 15 mots de lorem
+pour declencher l'affichage de la fenetre modal ajouter au button les attributs data-bs-toggle="modal" et data-bs-target="# [avec le nom de l'id de la fenetre modal a afficher ] " 
+
+ajoutez au dessus de div class="modal-body" un div class="modal-header" avec un titre class="modal-title" et un button type="button" class="btn-close" data-bs-dismiss="modal"
+
+ajoutez div class="modal-footer" avec un bouton de fermeture du modal
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        click me
+      </button>
+
+      <div id="myModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">Lorem, ipsum.</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              laudantium. Provident officia corrupti dolore officiis?
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                fermer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

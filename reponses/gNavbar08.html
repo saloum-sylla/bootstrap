@@ -1,0 +1,59 @@
+<!-- 
+    reprenez l'exercice 7
+    pour rendre actif le button il faut ajouter le scrit bootstrap.bundle.min.js
+    ajoutez au button l'attribut data-bs-toggle="collapse" et data-bs-target="#(mettre l'id du bloc a faire disparaitre)"
+    ajoutez un id a <nav> pour pouvoir cibler l'element avec data-bs-target
+ -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#contenuNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="contenuNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="">accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""> A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

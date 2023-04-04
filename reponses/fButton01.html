@@ -1,0 +1,49 @@
+<!-- 
+    Avec Bootstrap, vous pouvez créer des boutons en utilisant l'élément HTML <button type="button"> <input type="submit">  <a>. 
+
+        creez 3 elements <button> <input> et <a> (avec un contenu). 
+            ajoutez leur la class btn et une couleur de fond
+            https://getbootstrap.com/docs/5.0/components/buttons/#button-tags
+
+            utilisez les class active pour la page active' et disabled pour desactiver des liens
+            btn-sm  et btn-lg pour changer la taille
+
+     -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <!-- 
+       <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+         crossorigin="anonymous"
+       ></script> -->
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <a class="btn btn-success active" href="">lien</a>
+      <button type="button" class="btn btn-primary disabled btn-sm">
+        button
+      </button>
+      <input
+        class="btn btn btn-info disabled btn-lg"
+        type="submit"
+        value="input"
+      />
+    </main>
+    <footer></footer>
+  </body>
+</html>

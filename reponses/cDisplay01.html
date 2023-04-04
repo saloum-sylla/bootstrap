@@ -1,0 +1,59 @@
+<!-- Créez une page HTML
+
+Ajoutez une div avec la classe "container".
+
+Ajoutez une autre div à l'intérieur de la première avec la classe "row".
+
+Ajoutez trois div supplémentaires à l'intérieur de la div "row", chacune avec la classe "col".
+
+À l'intérieur de chaque colonne, ajoutez une image et un titre .
+
+Ajoutez également un petit paragraphe de texte sous chaque titre pour donner une description de l'image.
+
+Utilisez les classes Bootstrap pour styliser les éléments, par exemple "img-fluid" pour les images et "text-center" pour centrer le texte.
+
+Ajoutez du CSS personnalisé pour donner une apparence unique à votre grille de colonnes. -->
+
+<!-- faite disparaitre la  1er image sur les ecrans moyen et la  1er et 2eme sur les petits ecrans -->
+
+<!DOCTYPE html  >
+<html lang="fr" >
+  <head>
+    <title>Exercice Bootstrap</title>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      .col {
+        border: 1px solid black;
+        padding: 10px;
+      }
+       img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-lg-block ">
+          <img src="https://static.hbo.com/game-of-thrones-1-1920x1080.jpg" class="img-fluid">
+          <h3 class="text-center">Image 1</h3>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col d-none d-md-block">
+          <img src="https://leclaireur.fnac.com/wp-content/uploads/2021/12/matrix-1.jpg" class="img-fluid">
+          <h3 class="text-center">Image 2</h3>
+          <p class="text-center">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col ">
+          <img src="https://thumbs.gfycat.com/FamousAshamedImperialeagle-size_restricted.gif" class="img-fluid">
+          <h3 class="text-center">Image 3</h3>
+          <p class="text-center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
